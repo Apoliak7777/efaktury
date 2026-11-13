@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Revízor e-faktúr: prečíta a skontroluje e-faktúru | Apoliak</title>
+  <meta name="description" content="Od 1. 1. 2027 chodia faktúry medzi firmami ako XML. Revízor ich ukáže ako normálnu faktúru, skontroluje podľa pravidiel Peppol a EN 16931 a beží bez internetu. Pre firmy aj účtovné kancelárie.">
+  <meta name="theme-color" content="#fbfaf7">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://efaktury.apoliak.sk/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:site_name" content="Apoliak e-faktúry">
+  <meta property="og:title" content="E-faktúru prečítate aj skontrolujete za pár sekúnd">
+  <meta property="og:description" content="Revízor e-faktúr ukáže XML faktúru ako normálnu faktúru a skontroluje ju podľa pravidiel Peppol. Beží bez internetu, od 49 € na rok.">
+  <meta property="og:url" content="https://efaktury.apoliak.sk/">
+  <meta property="og:image" content="https://efaktury.apoliak.sk/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Revízor e-faktúr",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Windows, macOS (v prehliadači)",
+  "url": "https://efaktury.apoliak.sk/",
+  "description": "Zobrazenie a kontrola elektronických faktúr podľa pravidiel Peppol BIS 3.0 a EN 16931, bez internetu.",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Pre firmu",
+      "price": "49",
+      "priceCurrency": "EUR"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pre účtovnú kanceláriu",
+      "price": "149",
+      "priceCurrency": "EUR"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Apoliak",
+    "email": "efaktury@apoliak.sk",
+    "telephone": "+421902464022",
+    "logo": "https://efaktury.apoliak.sk/assets/img/logo-512.png"
+  }
+}
+  </script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 4l9 16H3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 10v4.5M12 17.2v.3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7.5l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h3l1.5 4-2 1.3a11 11 0 005.1 5.1l1.3-2 4 1.5v3a2 2 0 01-2.2 2A16.5 16.5 0 014.6 5.7a2 2 0 012-2.2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="./" aria-label="Apoliak e-faktúry – úvod"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#2450a6"/><path d="M13 9.5h10l5 5v16a1.5 1.5 0 01-1.5 1.5h-13.5a1.5 1.5 0 01-1.5-1.5v-19.5a1.5 1.5 0 011.5-1.5z" fill="#fff"/><path d="M23 9.5v5h5" fill="none" stroke="#c9d6f3" stroke-width="1.6"/><path d="M15.5 22.5l3 3 6-6.5" fill="none" stroke="#2450a6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Apoliak <span class="logo-tag">e-faktúry</span></a>
+      <nav class="nav" aria-label="Hlavné menu"><a href="#zmena">Čo sa mení</a><a href="#funkcie">Čo vie Revízor</a><a href="#ukazka">Ukážka</a><a href="#cennik">Cenník</a><a href="#otazky">Otázky</a></nav>
+      <a class="btn btn--small" href="./#kontakt">Kontakt</a>
+    </div>
+  </header>
+  <main id="obsah">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow"><span class="nb">E-faktúry</span> od 1. januára 2027</span>
+          <h1><span class="nb">E-faktúru</span> prečítate aj skontrolujete za pár sekúnd</h1>
+          <p class="lead">Od januára budú firmám chodiť faktúry ako XML súbory. Revízor ich ukáže ako normálnu faktúru, povie, či sú v&nbsp;poriadku, a&nbsp;nič pritom neposiela na internet.</p>
+          <div class="cta-row"><a class="btn" href="ukazka/">Vyskúšať ukážku</a><a class="btn btn--ghost" href="#cennik">Cenník</a></div>
+          <ul class="facts"><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Pravidlá Peppol BIS 3.0 a&nbsp;EN 16931</li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Beží bez internetu</li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Stačí prehliadač, nič sa neinštaluje</li></ul>
+        </div>
+        <div><div class="panel" role="img" aria-label="Ukážka výsledku kontroly e-faktúry v Revízore">
+            <div class="panel-head"><span class="panel-title">Faktúra 2027-0142</span><span class="panel-sub">XML · Peppol BIS 3.0</span></div>
+            <ul class="rows">
+              <li class="is-ok"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><div>Dodávateľ a odberateľ<small>názov, adresa, IČO, IČ DPH</small></div></li>
+              <li class="is-ok"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><div>Položky a súčty<small>3 položky, 1&nbsp;250,00&nbsp;€ bez DPH</small></div></li>
+              <li class="is-ok"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><div>DPH podľa sadzieb<small>23&nbsp;% a 19&nbsp;%, súčty sedia</small></div></li>
+              <li class="is-warn"><svg class="icon" aria-hidden="true"><use href="#i-warn"/></svg><div>Chýba referencia odberateľa alebo číslo objednávky<small>pravidlo PEPPOL-EN16931-R003</small></div></li>
+            </ul>
+            <div class="panel-foot"><strong>1 chyba.</strong> Faktúra nespĺňa pravidlá Peppol, dodávateľ ju má opraviť.</div>
+          </div></div>
+      </div>
+    </section>
+    <section class="section" id="zmena" aria-labelledby="zmena-nadpis">
+      <div class="wrap"><div class="section-head"><h2 id="zmena-nadpis">Čo sa mení od 1. januára 2027</h2><p>Novela zákona o&nbsp;DPH (zákon č. 385/2025 Z. z.) zavádza povinné elektronické faktúry. Týka sa to takmer každej firmy na Slovensku.</p></div><div class="cards"><article class="card"><h3>Platitelia DPH vystavujú <span class="nb">e-faktúry</span></h3><p>Faktúry medzi firmami na Slovensku posielajú ako XML súbor cez sieť Peppol, nie ako PDF.</p></article><article class="card"><h3>Prijať ich musí každá firma</h3><p>Aj neplatiteľ DPH musí vedieť <span class="nb">e-faktúru</span> prijať. Príde súbor, ktorý sa bez programu poriadne čítať nedá.</p></article><article class="card"><h3>Chyby treba vybaviť skôr</h3><p>Chybná <span class="nb">e-faktúra</span> narobí problémy v&nbsp;účtovníctve. Kto ju skontroluje hneď pri prijatí, vybaví opravu s&nbsp;dodávateľom včas.</p></article></div></div>
+    </section>
+    <section class="section section--alt" id="funkcie" aria-labelledby="funkcie-nadpis">
+      <div class="wrap"><div class="section-head"><h2 id="funkcie-nadpis">Čo Revízor urobí</h2><p>Revízor je jeden súbor, ktorý otvoríte v&nbsp;prehliadači. Faktúry spracúva priamo vo vašom počítači.</p></div><div class="cards"><article class="card"><h3>Ukáže faktúru ako na papieri</h3><p>Dodávateľ, odberateľ, položky, DPH, splatnosť aj QR kód PAY by square na zaplatenie. Faktúru vytlačíte alebo uložíte do PDF.</p></article><article class="card"><h3>Skontroluje ju podľa pravidiel</h3><p>Podľa pravidiel Peppol BIS 3.0 a&nbsp;normy EN 16931, ktoré platia v&nbsp;celej Európe. Každú chybu vysvetlí po slovensky.</p></article><article class="card"><h3>Celý mesiac naraz</h3><p>Vložíte desiatky faktúr a&nbsp;Revízor skontroluje každú z&nbsp;nich. Výsledok uložíte do tabuľky alebo do ZIP.</p></article><article class="card"><h3>Vystaví <span class="nb">e-faktúru</span></h3><p>Vyplníte formulár a&nbsp;Revízor pripraví XML vo formáte Peppol UBL, ktoré pošlete cez svojho poskytovateľa.</p></article><article class="card"><h3>Prevedie CII na UBL</h3><p>Faktúry vo formáte CII, napríklad nemecký ZUGFeRD, prevedie na UBL, s&nbsp;ktorým pracuje sieť Peppol.</p></article><article class="card"><h3>Nič neodosiela</h3><p>Revízor nemá prístup na internet. Faktúry s&nbsp;cenami a&nbsp;menami vašich klientov zostanú vo vašom počítači.</p></article></div><div class="callout"><svg class="icon" aria-hidden="true"><use href="#i-warn"/></svg><div><h3>Revízor faktúry neposiela</h3><p>Posielať a&nbsp;prijímať <span class="nb">e-faktúry</span> cez sieť Peppol môže len poskytovateľ zo zoznamu finančnej správy, takzvaný digitálny poštár. Revízor ho nenahrádza. Pomôže vám faktúry prečítať, skontrolovať a&nbsp;pripraviť.</p></div></div></div>
+    </section>
+    <section class="section" id="ukazka" aria-labelledby="ukazka-nadpis">
+      <div class="wrap"><div class="section-head"><h2 id="ukazka-nadpis">Vyskúšajte Revízor na vzorovej faktúre</h2><p>Ukážka je celý Revízor, len nevie faktúru stiahnuť ani vytlačiť. Stiahnite si vzor a&nbsp;vložte ho do ukážky, alebo skúste vlastnú <span class="nb">e-faktúru</span>.</p></div><div class="demo">
+          <div>
+            <p><a class="btn" href="ukazka/">Otvoriť ukážku Revízora</a></p>
+            <p class="small">Ukážka beží len vo vašom prehliadači. Faktúry, ktoré do nej vložíte, nikam neodchádzajú.</p>
+          </div>
+          <ul class="files" aria-label="Vzorové e-faktúry na stiahnutie">
+            <li><a href="ukazka/vzory/vzor-faktura-platna.xml" download>Faktúra bez chýb <span>XML, 9 kB</span></a></li>
+            <li><a href="ukazka/vzory/vzor-faktura-s-chybami.xml" download>Faktúra s chybami <span>XML, 8 kB</span></a></li>
+            <li><a href="ukazka/vzory/vzor-dobropis.xml" download>Dobropis <span>XML, 6 kB</span></a></li>
+            <li><a href="ukazka/vzory/vzor-opravna-faktura-384.xml" download>Opravná faktúra (typ 384) <span>XML, 9 kB</span></a></li>
+            <li><a href="ukazka/vzory/vzor-faktura-cii-zugferd.xml" download>Faktúra vo formáte CII (ZUGFeRD) <span>XML, 8 kB</span></a></li>
+          </ul>
+        </div></div>
+    </section>
+    <section class="section section--alt" id="cennik" aria-labelledby="cennik-nadpis">
+      <div class="wrap"><div class="section-head"><h2 id="cennik-nadpis">Cenník</h2><p>Platíte raz za rok. Revízor, ktorý dostanete, vám zostane aj potom, len už nebude dostávať nové pravidlá.</p></div><div class="prices"><article class="price"><div class="price-name">Pre firmu</div><div class="price-amount">49&nbsp;€ <span class="price-unit">na rok</span></div><p class="price-note">pre faktúry jednej firmy</p><ul class="checks"><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Čítanie a&nbsp;kontrola faktúr bez obmedzenia</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Vystavenie <span class="nb">e-faktúry</span> a&nbsp;prevod CII na UBL</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Kontrola po dávkach a&nbsp;výsledok do tabuľky</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Nové pravidlá počas celého roka</span></li></ul><a class="btn btn--ghost" href="mailto:efaktury@apoliak.sk?subject=Objedn%C3%A1vka%20Rev%C3%ADzora%20pre%20firmu&amp;body=Dobr%C3%BD%20de%C5%88%2C%0A%0Aobjedn%C3%A1vam%20Rev%C3%ADzor%20e-fakt%C3%BAr%20pre%20firmu%20na%201%20rok%20%2849%20%E2%82%AC%29.%0A%0AFirma%3A%0AI%C4%8CO%3A%0AE-mail%2C%20kam%20posla%C5%A5%20Rev%C3%ADzor%3A%0A%0A%C4%8Eakujem">Objednať pre firmu</a></article><article class="price price--main"><div class="price-name">Pre účtovnú kanceláriu</div><div class="price-amount">149&nbsp;€ <span class="price-unit">na rok</span></div><p class="price-note">pre faktúry všetkých vašich klientov</p><ul class="checks"><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Všetko z&nbsp;balíka pre firmu</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Faktúry ľubovoľného počtu klientov</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Na všetkých počítačoch v&nbsp;kancelárii</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>Odpoveď na otázky do jedného pracovného dňa</span></li></ul><a class="btn" href="mailto:efaktury@apoliak.sk?subject=Objedn%C3%A1vka%20Rev%C3%ADzora%20pre%20%C3%BA%C4%8Dtovn%C3%BA%20kancel%C3%A1riu&amp;body=Dobr%C3%BD%20de%C5%88%2C%0A%0Aobjedn%C3%A1vam%20Rev%C3%ADzor%20e-fakt%C3%BAr%20pre%20%C3%BA%C4%8Dtovn%C3%BA%20kancel%C3%A1riu%20na%201%20rok%20%28149%20%E2%82%AC%29.%0A%0AKancel%C3%A1ria%3A%0AI%C4%8CO%3A%0AE-mail%2C%20kam%20posla%C5%A5%20Rev%C3%ADzor%3A%0A%0A%C4%8Eakujem">Objednať pre kanceláriu</a></article></div><p class="prices-after">Ceny sú konečné, nie sme platiteľmi DPH. Pošleme vám faktúru so splatnosťou 7&nbsp;dní a&nbsp;Revízor dostanete <span class="nb">e-mailom</span> hneď po pripísaní platby. Keď sa zmenia pravidlá Peppol, spravidla v&nbsp;máji a&nbsp;v&nbsp;novembri, pošleme novú verziu.</p></div>
+    </section>
+    <section class="section" id="otazky" aria-labelledby="otazky-nadpis">
+      <div class="wrap"><div class="section-head"><h2 id="otazky-nadpis">Časté otázky</h2></div><div class="faq"><details><summary>Potrebujem Revízor, keď mám fakturačný program?</summary><div><p>Nemusíte. Ak váš program vie <span class="nb">e-faktúry</span> čítať aj kontrolovať, stačí vám. Revízor sa hodí, keď chcete faktúru skontrolovať nezávisle od programu, prečítať XML, ktoré prišlo <span class="nb">e-mailom</span>, alebo skontrolovať naraz faktúry za celý mesiac.</p></div></details><details><summary>Pošle Revízor <span class="nb">e-faktúru</span> odberateľovi?</summary><div><p>Nie. Posielanie cez sieť Peppol robí poskytovateľ zo zoznamu finančnej správy. Revízor súbor pripraví a&nbsp;skontroluje, odošle ho váš poskytovateľ.</p></div></details><details><summary>Kam idú moje faktúry?</summary><div><p>Nikam. Revízor beží len vo vašom počítači a&nbsp;na internet sa nepripája. Nikto okrem vás faktúry nevidí.</p></div></details><details><summary>Na akom počítači Revízor funguje?</summary><div><p>V&nbsp;aktuálnom prehliadači Chrome, Edge, Firefox alebo Safari, na Windowse aj na Macu. Nič sa neinštaluje, Revízor je jeden súbor, ktorý otvoríte dvojklikom.</p></div></details><details><summary>Čo keď sa pravidlá zmenia?</summary><div><p>Počas zaplateného roka vám novú verziu pošleme <span class="nb">e-mailom</span> vždy, keď Peppol alebo finančná správa pravidlá zmení. Po roku vám Revízor funguje ďalej, len bez nových pravidiel.</p></div></details><details><summary>Ako zaplatím?</summary><div><p>Po objednávke vám <span class="nb">e-mailom</span> pošleme faktúru so splatnosťou 7&nbsp;dní. Platíte prevodom na účet, Revízor dostanete hneď po pripísaní platby.</p></div></details></div></div>
+    </section>
+    <section class="section section--alt" id="kontakt" aria-labelledby="kontakt-nadpis">
+      <div class="wrap contact">
+        <div>
+          <h2 id="kontakt-nadpis">Objednávka a&nbsp;otázky</h2>
+          <p>Napíšte, či Revízor chcete pre jednu firmu alebo pre účtovnú kanceláriu. Pošleme faktúru a&nbsp;po zaplatení aj Revízor.</p>
+          <p class="small">Pýtajte sa aj vtedy, keď si nie ste istí, či Revízor potrebujete. Ak vám stačí váš fakturačný program, povieme vám to na rovinu.</p>
+        </div>
+        <div class="contact-box">
+          <a class="contact-line" href="mailto:efaktury@apoliak.sk"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>efaktury@apoliak.sk</a>
+          <a class="contact-line" href="tel:+421902464022"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>0902 464 022</a>
+          <a class="btn" href="mailto:efaktury@apoliak.sk?subject=Rev%C3%ADzor%20e-fakt%C3%BAr">Napísať e-mail</a>
+          <p class="small">Odpovedáme spravidla v&nbsp;ten istý alebo nasledujúci pracovný deň.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p>© <span data-year>2026</span> Apoliak, Bratislava. IČO 57&nbsp;990&nbsp;883. Nie sme platiteľmi DPH.</p>
+        <p><a href="mailto:efaktury@apoliak.sk">efaktury@apoliak.sk</a> · <a href="tel:+421902464022">0902 464 022</a></p>
+        <p><a href="obchodne-podmienky.html">Obchodné podmienky</a> · <a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a></p>
+        <p>Revízor nie je poskytovateľ doručovacej služby (digitálny poštár) a&nbsp;nie je prepojený s&nbsp;finančnou správou.</p>
+      </div>
+      <div class="footer-more">
+        <p><strong>Ďalšie služby Apoliak</strong></p>
+        <ul><li><a href="https://mapy.apoliak.sk/">Profil na Google Mapách</a></li><li><a href="https://3d.apoliak.sk/">3D tlač na zákazku</a></li><li><a href="https://apoliak.online/">Weby pre firmy</a></li></ul>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
